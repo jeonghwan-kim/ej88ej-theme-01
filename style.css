@@ -481,7 +481,7 @@ img.wp-smiley,
 
 /* Body, links, basics */
 html {
-	font-size: 87.5%;
+	font-size: 100%;
 }
 body {
 	font-size: 14px;
@@ -500,6 +500,7 @@ a {
 }
 a:hover {
 	color: darkgreen;
+    border-bottom: dotted 1px;
 }
 
 /* Assistive text */
@@ -557,9 +558,9 @@ a:hover {
 	display: inline-block;
 	text-decoration: none;
 }
-ㄷsite-header h1 a:hover,
+.site-header h1 a:hover,
 .site-header h2 a:hover {
-	color: darkgreen;
+    border-bottom: none;
 }
 .site-header h1 {
 	font-size: 24px;
@@ -705,9 +706,12 @@ footer[role="contentinfo"] a:hover {
 	line-height: 1.2;
 	font-weight: normal;
 }
+.entry-header .entry-title-underline {
+    border-bottom: dotted 1px lightgrey;
+}
 .entry-header .entry-title a {
     text-decoration: none;
-    color: black;
+    color: #444;
 }
 .entry-header .entry-format {
 	margin-top: 24px;
@@ -758,14 +762,12 @@ article.sticky .featured-post {
 .comment-content h5,
 .entry-content h6,
 .comment-content h6 {
-	margin: 24px 0;
-	margin: 1.714285714rem 0;
+	margin: 0 0;
 	line-height: 1.714285714;
 }
 .entry-content h1,
 .comment-content h1 {
-	font-size: 21px;
-	font-size: 1.5rem;
+	font-size: 200%;
 	line-height: 1.5;
 }
 .entry-content h2,
@@ -803,8 +805,6 @@ article.sticky .featured-post {
 .entry-summary p,
 .comment-content p,
 .mu_register p {
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
     font-size: 125%;
 }
@@ -817,8 +817,6 @@ article.sticky .featured-post {
 .entry-content ul,
 .comment-content ul,
 .mu_register ul {
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
 }
 .entry-content ul ul,
@@ -980,10 +978,10 @@ img.aligncenter,
 	line-height: 1.714285714;
 }
 footer.entry-meta {
-	font-size: 13px;
-	font-size: 0.928571429rem;
+	font-size: 80%;
 	line-height: 1.846153846;
 	color: #757575;
+    font-weight: 100;
 }
 .single-author .entry-meta .by-author {
 	display: none;
