@@ -149,6 +149,10 @@ function twentytwelve_scripts_styles() {
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
 
+    // Loads font-awesome stylesheet.
+    $font_awesome_url = get_stylesheet_directory_uri() . '/css/font-awesome-4.2.0/css/font-awesome.min.css';
+    wp_enqueue_style( 'font-awesome', $font_awesome_url, array(), null );
+
 	// Loads the Internet Explorer specific stylesheet.
 	wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
 	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );

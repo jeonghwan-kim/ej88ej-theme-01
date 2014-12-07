@@ -495,10 +495,11 @@ body.custom-font-enabled {
 }
 a {
 	outline: none;
-	color: #21759b;
+	color: green;
+    text-decoration: none;
 }
 a:hover {
-	color: #0f3647;
+	color: darkgreen;
 }
 
 /* Assistive text */
@@ -524,9 +525,8 @@ a:hover {
 
 /* Page structure */
 .site {
-	padding: 0 24px;
-	padding: 0 1.714285714rem;
-	background-color: #fff;
+	padding: 0 10px;
+	background-color: transparent;
 }
 .site-content {
 	margin: 24px 0 0;
@@ -538,9 +538,14 @@ a:hover {
 }
 
 /* Header */
+.site-header-wrapper {
+    background-color: #000;
+    padding: 30px 0;
+}
 .site-header {
 	padding: 24px 0;
 	padding: 1.714285714rem 0;
+    background-color: #000;
 }
 .site-header h1,
 .site-header h2 {
@@ -548,13 +553,13 @@ a:hover {
 }
 .site-header h1 a,
 .site-header h2 a {
-	color: #515151;
+	color: #fff;
 	display: inline-block;
 	text-decoration: none;
 }
-.site-header h1 a:hover,
+ㄷsite-header h1 a:hover,
 .site-header h2 a:hover {
-	color: #21759b;
+	color: darkgreen;
 }
 .site-header h1 {
 	font-size: 24px;
@@ -701,7 +706,8 @@ footer[role="contentinfo"] a:hover {
 	font-weight: normal;
 }
 .entry-header .entry-title a {
-	text-decoration: none;
+    text-decoration: none;
+    color: black;
 }
 .entry-header .entry-format {
 	margin-top: 24px;
@@ -718,11 +724,11 @@ footer[role="contentinfo"] a:hover {
 }
 .comments-link a,
 .entry-meta a {
-	color: #757575;
+	/*color: green;*/
 }
 .comments-link a:hover,
 .entry-meta a:hover {
-	color: #21759b;
+
 }
 article.sticky .featured-post {
 	border-top: 4px double #ededed;
@@ -800,6 +806,7 @@ article.sticky .featured-post {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
+    font-size: 125%;
 }
 .entry-content a:visited,
 .comment-content a:visited {
@@ -838,6 +845,7 @@ article.sticky .featured-post {
 .mu_register li {
 	margin: 0 0 0 36px;
 	margin: 0 0 0 2.571428571rem;
+    font-size: 125%;
 }
 .entry-content blockquote,
 .comment-content blockquote {
@@ -957,23 +965,21 @@ img.aligncenter,
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
-	border-bottom: 4px double #ededed;
 	margin-bottom: 72px;
-	margin-bottom: 5.142857143rem;
+	margin-bottom: 2.142857143rem;
 	padding-bottom: 24px;
 	padding-bottom: 1.714285714rem;
 	word-wrap: break-word;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+    border-bottom: solid 1px lightgrey;
 }
 .page-links {
 	clear: both;
 	line-height: 1.714285714;
 }
 footer.entry-meta {
-	margin-top: 24px;
-	margin-top: 1.714285714rem;
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
@@ -1471,8 +1477,7 @@ img#wpstats {
 	}
 	.site {
 		margin: 0 auto;
-		max-width: 960px;
-		max-width: 68.571428571rem;
+		max-width: 768px;
 		overflow: hidden;
 	}
 	.site-content {
@@ -1585,8 +1590,8 @@ img#wpstats {
 		display: none;
 	}
 	.entry-header .entry-title {
-		font-size: 22px;
-		font-size: 1.571428571rem;
+		font-size: 200%;
+        font-weight: 900;
 	}
 	#respond form input[type="text"] {
 		width: 46.333333333%;
@@ -1636,30 +1641,27 @@ img#wpstats {
 }
 
 /* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
-	body {
-		background-color: #e6e6e6;
-	}
-	body .site {
-		padding: 0 40px;
-		padding: 0 2.857142857rem;
-		margin-top: 48px;
-		margin-top: 3.428571429rem;
-		margin-bottom: 48px;
-		margin-bottom: 3.428571429rem;
-		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
-	}
-	body.custom-background-empty {
-		background-color: #fff;
-	}
-	body.custom-background-empty .site,
-	body.custom-background-white .site {
-		padding: 0;
-		margin-top: 0;
-		margin-bottom: 0;
-		box-shadow: none;
-	}
-}
+/*@media screen and (min-width: 960px) {*/
+	/*body {*/
+		/*background-color: #fff;*/
+	/*}*/
+	/*body .site {*/
+		/*padding: 0 40px;*/
+		/*padding: 0 2.857142857rem;*/
+		/*margin-top: 0;*/
+		/*margin-bottom: 0;*/
+	/*}*/
+	/*body.custom-background-empty {*/
+		/*background-color: #fff;*/
+	/*}*/
+	/*body.custom-background-empty .site,*/
+	/*body.custom-background-white .site {*/
+		/*padding: 0;*/
+		/*margin-top: 0;*/
+		/*margin-bottom: 0;*/
+		/*box-shadow: none;*/
+	/*}*/
+/*}*/
 
 
 /* =Print
@@ -1696,6 +1698,7 @@ img#wpstats {
 		margin-bottom: 72px;
 		margin-bottom: 5.142857143rem;
 		text-align: left;
+        background: #000;
 	}
 	.site-header h1 {
 		font-size: 21pt;

@@ -30,16 +30,9 @@
 			<?php endif; // is_single() ?>
 		</header><!-- .entry-header -->
 
-        <?php if ( is_search() ) : // Only display Excerpts for Search ?>
-            <div class="entry-summary">
-                <?php the_excerpt(); ?>
-            </div><!-- .entry-summary -->
-        <?php else : ?>
-            <div class="entry-content">
-                <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
-                <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
-            </div><!-- .entry-content -->
-        <?php endif; ?>
+        <div class="entry-summary">
+            <?php the_excerpt(); ?>
+        </div><!-- .entry-summary -->
 
 		<footer class="entry-meta">
             <?php if ( comments_open() ) : ?>
