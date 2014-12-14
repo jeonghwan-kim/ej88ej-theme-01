@@ -454,7 +454,7 @@ img.wp-smiley,
 	margin-bottom: 1.714285714rem;
 }
 .author-info {
-	border-top: 1px solid #ededed;
+	border-top: 1px solid lightgrey;
 	margin: 24px 0;
 	margin: 1.714285714rem 0;
 	padding-top: 24px;
@@ -666,7 +666,7 @@ section[role="banner"] {
 
 /* Footer */
 footer[role="contentinfo"] {
-	border-top: 1px solid #ededed;
+	border-top: 1px solid lightgrey;
 	clear: both;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -680,12 +680,12 @@ footer[role="contentinfo"] {
 	padding: 24px 0;
 	padding: 1.714285714rem 0;
 }
-footer[role="contentinfo"] a {
-	color: #686868;
-}
-footer[role="contentinfo"] a:hover {
-	color: #21759b;
-}
+/*footer[role="contentinfo"] a {*/
+	/*color: #686868;*/
+/*}*/
+/*footer[role="contentinfo"] a:hover {*/
+	/*color: #21759b;*/
+/*}*/
 
 
 /* =Main content and comment content
@@ -737,8 +737,8 @@ footer[role="contentinfo"] a:hover {
 
 }
 article.sticky .featured-post {
-	border-top: 4px double #ededed;
-	border-bottom: 4px double #ededed;
+	border-top: 4px double lightgrey;
+	border-bottom: 4px double lightgrey;
 	color: #757575;
 	font-size: 13px;
 	font-size: 0.928571429rem;
@@ -868,7 +868,7 @@ article.sticky .featured-post {
 }
 .entry-content pre,
 .comment-content pre {
-	border: 1px solid #ededed;
+	border: 1px solid lightgrey;
 	color: #666;
 	font-family: Consolas, Monaco, Lucida Console, monospace;
 	font-size: 12px;
@@ -943,7 +943,7 @@ img.aligncenter,
 }
 .entry-content table,
 .comment-content table {
-	border-bottom: 1px solid #ededed;
+	border-bottom: 1px solid lightgrey;
 	color: #757575;
 	font-size: 12px;
 	font-size: 0.857142857rem;
@@ -961,7 +961,7 @@ img.aligncenter,
 }
 .entry-content td,
 .comment-content td {
-	border-top: 1px solid #ededed;
+	border-top: 1px solid lightgrey;
 	padding: 6px 10px 6px 0;
 }
 .site-content article {
@@ -1003,7 +1003,7 @@ footer.entry-meta {
 	margin-bottom: 3.428571429rem;
 	padding-bottom: 22px;
 	padding-bottom: 1.571428571rem;
-	border-bottom: 1px solid #ededed;
+	border-bottom: 1px solid lightgrey;
 }
 .archive-meta {
 	color: #757575;
@@ -1363,7 +1363,7 @@ a.comment-edit-link:hover {
 	width: auto;
 	padding-top: 24px;
 	padding-top: 1.714285714rem;
-	border-top: 1px solid #ededed;
+	border-top: 1px solid lightgrey;
 }
 .template-front-page .widget-area .widget li {
 	margin: 8px 0 0;
@@ -1505,8 +1505,8 @@ img#wpstats {
 	}
 	.main-navigation ul.nav-menu,
 	.main-navigation div.nav-menu > ul {
-		border-bottom: 1px solid #ededed;
-		border-top: 1px solid #ededed;
+		border-bottom: 1px solid lightgrey;
+		border-top: 1px solid lightgrey;
 		display: inline-block !important;
 		text-align: left;
 		width: 100%;
@@ -1562,7 +1562,7 @@ img#wpstats {
 	}
 	.main-navigation li ul li a {
 		background: #efefef;
-		border-bottom: 1px solid #ededed;
+		border-bottom: 1px solid lightgrey;
 		display: block;
 		font-size: 11px;
 		font-size: 0.785714286rem;
