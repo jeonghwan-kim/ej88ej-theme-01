@@ -185,12 +185,12 @@ img {
 .widget-title,
 .entry-content th,
 .comment-content th {
-	font-size: 11px;
-	font-size: 0.785714286rem;
+	font-size: 120%;
 	line-height: 2.181818182;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #636363;
+    font-style: italic;
 }
 
 /* Shared Post Format styling */
@@ -216,6 +216,7 @@ textarea {
 button,
 input {
 	line-height: normal;
+    .pure-button;
 }
 textarea {
 	font-size: 100%;
@@ -659,7 +660,8 @@ section[role="banner"] {
 	color: #9f9f9f;
 }
 .widget-area #s {
-	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
+	width: 53.66666666666%;  /* define a width to avoid dropping a wider submit button */
+    height: 19px;
 }
 
 /* Footer */
@@ -1489,8 +1491,7 @@ img#wpstats {
 		width: 100%;
 	}
 	.widget-area {
-		float: right;
-		width: 26.041666667%;
+		width: 100%;
 	}
 	.site-header h1,
 	.site-header h2 {
